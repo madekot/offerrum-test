@@ -1,4 +1,4 @@
-(# Публикаци в интернете)[https://madekot.github.io/offerrum-test]
+### __[Публикация в интернете](https://madekot.github.io/offerrum-test)__
 
 > Используется Gulp 4
 
