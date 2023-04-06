@@ -1,0 +1,73 @@
+.btn {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.36px;
+    transition: 300ms ease-in;
+    transition-property: border, color, background-color;
+
+    &--outline {
+        padding: 16px 22px;
+        border: 1px solid white;
+        border-radius: 15px;
+
+        &:hover {
+            color: #c3f33b;
+            border-color: #c3f33b;
+        }
+
+        &:active {
+            color: #c3f33b;
+            border-color: #c3f33b;
+            background-color: rgba(#E0FFAC0D, 0.1);
+        }
+
+        &:disabled {
+            color: #ffffff;
+            border-color: #ffffff;
+            background-color: transparent;
+            cursor: not-allowed;
+        }
+    }
+
+    &--solid {
+        padding: 20px 30px;
+        border-radius: 20px;
+        background-color: #1DD844;
+        background-image: linear-gradient(to right, #1dd844, #cbf62e);
+        box-shadow: 0 0 20px 0 #1dd844;
+        color: #242424;
+
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 26px;
+
+        transition: 300ms ease-in;
+        transition-property: box-shadow;
+
+        &:hover {
+            box-shadow: 0 0 40px 0 #1dd844;
+        }
+
+        &:active {
+            box-shadow: 0 0 40px 0 #1dd844, inset 0 5px 10px 2px rgba(0, 0, 0, 0.25);
+        }
+
+        &:disabled {
+            box-shadow: none;
+            color: rgba(#242424, 0.5);
+            cursor: not-allowed;
+        }
+
+        @include tablet() {
+            padding: 15px 23px;
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+}
+

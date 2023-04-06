@@ -1,0 +1,124 @@
+.header {
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
+.header__content {
+    padding-top: 35px;
+    display: flex;
+}
+
+.header__nav {
+    margin-top: 12px;
+    margin-bottom: 12px;
+
+    @include tablet() {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+.header__btn-office {
+    margin-left: 150px;
+
+    @include tablet() {
+        margin-top: 90px;
+        margin-left: 0;
+    }
+
+    .btn {
+        white-space: nowrap;
+    }
+}
+
+.header__menu-content {
+    display: flex;
+
+    @include tablet() {
+        display: none;
+    }
+}
+
+.header__menu {
+    margin-left: auto;
+}
+
+.header__menu-controls {
+    @include for-desktop() {
+        display: none;
+    }
+
+    .header__close {
+        display: none;
+        height: 40px;
+        width: 40px;
+    }
+}
+
+.header__burger {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.header__close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+}
+
+.header__menu.is-active {
+    @include tablet() {
+        position: absolute;
+        margin-left: 0;
+        top: 0;
+        right: 0;
+        left: 16px;
+        background-color: #293344;
+        padding: 20px;
+        padding-bottom: 60px;
+        border-bottom-left-radius: 30px;
+    }
+
+    .header__menu-content {
+        @include tablet() {
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px;
+        }
+    }
+
+    .header__menu-logo {
+        @include tablet() {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .header__burger {
+        display: none;
+    }
+
+    .header__close {
+        display: flex;
+    }
+}
+
+.header__menu-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__menu-logo {
+    display: none;
+}
+
+.header__logo {
+    @include for-desktop() {
+        margin-right: 60px;
+    }
+}
